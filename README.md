@@ -29,26 +29,35 @@ The script should accept a single parameter to specify which metrics set to prin
      
      git clone https://github.com/devops-ukr/monitoring.git .
      
-     [BUILD]
+   [BUILD]
+     
      docker build -t metrics:v1 .
       
-     [RUN]
+   [RUN]
+   
      docker run --name metrics -itd metrics:v1 /bin/bash
     
        
   # How to use
   
   To connect to container, run the command
+     
      docker attach metrics
      
   To stop container, run the command
+     
      docker stop metrics
   
   To start container, run the command
+     
      docker start metrics
      
   And choose the metric for output
-      /root/metrics cpu   or   /root/metrics mem
+      
+      /root/metrics cpu   
+   or
+   
+      /root/metrics mem
     
       
   # Example of getting metrics out of the system:
