@@ -16,7 +16,7 @@ The script should accept a single parameter to specify which metrics set to prin
  
      You can use two types of installation:
  
- # 1 Use docker image
+ * 1 Use docker image
  
     [PULL FROM Dockerhub]
       docker pull devopsukr/metrics:v1
@@ -27,7 +27,7 @@ The script should accept a single parameter to specify which metrics set to prin
       /root/metrics cpu
       /root/metrics mem
       
- # 2 Build dockerfile
+ * 2 Build dockerfile
      
      git clone https://github.com/devops-ukr/monitoring.git .
      
