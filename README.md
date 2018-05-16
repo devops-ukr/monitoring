@@ -21,7 +21,8 @@ The script should accept a single parameter to specify which metrics set to prin
     
       docker pull devopsukr/metrics:v1
            
-    [RUN]
+   [RUN]
+    
     docker run --name metrics -itd devopsukr/metrics:v1 /bin/bash
    
       
@@ -62,22 +63,24 @@ The script should accept a single parameter to specify which metrics set to prin
       
   # Example of getting metrics out of the system:
   
-    metrics cpu
-system.cpu.idle 97.5
-system.cpu.user 1.5
-system.cpu.guest 0.0
-system.cpu.iowait 0.0
-system.cpu.stolen 0.0
-system.cpu.system 1.0
+   metrics cpu
+    
+    system.cpu.idle 97.5
+    system.cpu.user 1.5
+    system.cpu.guest 0.0
+    system.cpu.iowait 0.0
+    system.cpu.stolen 0.0
+    system.cpu.system 1.0
 
-    metrics mem
-virtual total 4100861952
-virtual used 1583845376
-virtual free 943075328
-virtual shared 51163136
-swap total 8017408000
-swap used 8017408000
-swap free 8017408000
+   metrics mem
+    
+    virtual total 4100861952
+    virtual used 1583845376
+    virtual free 943075328
+    virtual shared 51163136
+    swap total 8017408000
+    swap used 8017408000
+    swap free 8017408000
 
 
 
