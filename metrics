@@ -1,0 +1,44 @@
+#!/usr/bin/env python3.6
+import psutil
+import sys
+
+#https://psutil.readthedocs.io/en/latest/#psutil.virtual_memory
+
+#print (str(sys.argv))
+if "virtual" in sys.argv: 
+    virtual = psutil.virtual_memory()
+    #print(str(virtual))
+    print("virtual total " + str(virtual.total))
+
+    print("virtual used " + str(virtual.used))
+
+    print("virtual free " + str(virtual.free))
+
+    print("virtual shared " + str(virtual.shared))
+
+if "swap" in sys.argv:
+    swap = psutil.swap_memory()
+
+    print("swap total " + str(swap.total))
+
+    print("swap used " + str(swap.total))
+
+    print("swap free " + str(swap.total))
+
+#https://psutil.readthedocs.io/en/latest/#psutil.cpu_times_percent
+
+if "cpu" in sys.argv:
+    swap = psutil.swap_memory()
+    cpu = psutil.cpu_times_percent(interval=1)
+
+    print("system.cpu.idle "  + str(cpu.idle))
+
+    print("system.cpu.user "  + str(cpu.user))
+
+    print("system.cpu.guest "  + str(cpu.guest))
+
+    print("system.cpu.iowait "  + str(cpu.iowait))
+
+    print("system.cpu.stolen "  + str(cpu.steal))
+
+    print("system.cpu.system "  + str(cpu.system))
