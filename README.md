@@ -19,23 +19,17 @@ The script should accept a single parameter to specify which metrics set to prin
    1 Use docker image
  
     
-      docker pull devopsukr/metrics:v1
-           
-   run
-    
-    docker run --name metrics -itd devopsukr/metrics:v1 /bin/bash
+     docker pull devopsukr/metrics:v1
+ 
+     docker run --name metrics -itd devopsukr/metrics:v1 /bin/bash
    
       
    2 Build dockerfile
      
      git clone https://github.com/devops-ukr/monitoring.git .
-     
-   build
-     
+          
      docker build -t metrics:v1 .
-      
-   run
-   
+         
      docker run --name metrics -itd metrics:v1 /bin/bash
     
        
