@@ -5,7 +5,7 @@ import sys
 #https://psutil.readthedocs.io/en/latest/#psutil.virtual_memory
 
 #print (str(sys.argv))
-if "virtual" in sys.argv: 
+if "mem" in sys.argv: 
     virtual = psutil.virtual_memory()
     #print(str(virtual))
     print("virtual total " + str(virtual.total))
@@ -16,7 +16,6 @@ if "virtual" in sys.argv:
 
     print("virtual shared " + str(virtual.shared))
 
-if "swap" in sys.argv:
     swap = psutil.swap_memory()
 
     print("swap total " + str(swap.total))
@@ -28,7 +27,6 @@ if "swap" in sys.argv:
 #https://psutil.readthedocs.io/en/latest/#psutil.cpu_times_percent
 
 if "cpu" in sys.argv:
-    swap = psutil.swap_memory()
     cpu = psutil.cpu_times_percent(interval=1)
 
     print("system.cpu.idle "  + str(cpu.idle))
