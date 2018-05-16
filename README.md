@@ -8,17 +8,17 @@ The script should accept a single parameter to specify which metrics set to prin
     
  # Requirements
  
-    You need to install the docker
+ You need to install the docker
     https://docs.docker.com/install/
     
     
  # Installation 
  
-     You can use two types of installation:
+ You can use two types of installation:
  
    1 Use docker image
  
-    [PULL FROM Dockerhub]
+    
       docker pull devopsukr/metrics:v1
            
     [RUN]
@@ -61,7 +61,7 @@ system.cpu.iowait 0.0
 system.cpu.stolen 0.0
 system.cpu.system 1.0
 
-metrics mem
+    metrics mem
 virtual total 4100861952
 virtual used 1583845376
 virtual free 943075328
