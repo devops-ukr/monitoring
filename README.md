@@ -39,6 +39,15 @@ The script should accept a single parameter to specify which metrics set to prin
      
      docker attach metrics
      
+
+  And choose the metric for output
+      
+      /root/metrics cpu   
+   or
+   
+      /root/metrics mem
+    
+    
   To stop container, run the command
      
      docker stop metrics
@@ -47,13 +56,6 @@ The script should accept a single parameter to specify which metrics set to prin
      
      docker start metrics
      
-  And choose the metric for output
-      
-      /root/metrics cpu   
-   or
-   
-      /root/metrics mem
-    
       
   # Example of getting metrics out of the system:
   
